@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Portfolio</title>
+</head>
+<body onload="textAnimation()"> 
+    <header>
+        <div class="container-md">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav nav-fill w-100 align-items-start">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#aboutme">AboutMe</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+        <div id="header" class="mx-auto">
+            <h1>
+                <span>M</span>uhammad<br>
+                <span>Y</span>ousaf
+            </h1>
+            <hr class="headerLine"><br>
+            <h3 id="animation-text"></h3><br>
+            <h3>Nangarhar, Afghanistan</h3>
+            <ul class="headerSocial">
+                <li><a href="https://twitter.com/yousafMasror?s=09"><img src="./images/twitter.png" alt="Twitter Link"></a></li>
+                <li><a href="https://www.facebook.com/YousafMasror/"><img src="images/facebook.png" alt="Facebook Link"></a></li>
+                <li><a href="https://github.com/YousafKhan1"><img src="./images/github.png" alt="github link"></a></li>
+                <li><a href="https://www.linkedin.com/in/muhammad-yousaf-6b2363184"><img src="./images/linkedin.png" alt="Linked In link"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="aboutme">
+        <div class="container">
+            <br><br>
+            <h1 id="aboutme">About Me</h1><br>
+            <hr class="aboutmeLine"><br><br>
+            <h3>Assalam Alikum! My Name is Muhammad Yousaf</h3>
+            <p>
+                I am passionate and extremely motivated new front-end developer.
+                I believe I stand out due to my passion for continuous innovation and pushing boundaries 
+                to bring forward new ideas with the experience of 2 years in retail with a customer-first
+                mindset. With my sales skills, I identify real-world challenges and develop applications
+                that bring efficiency and improvement to the lives of users and also showcase which
+                technical improvements can make a meaningful impact on the user and the business.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills text-center" id="skills">
+        <br><br><h1>Technical Skills</h1><br>
+        <hr class="skillsLine"><br>
+        <div class="container">
+            <div class="skillsImages">
+                <div class="text-center mx-auto"><img src="./images/html5.webp" alt="html5"><br><h4>HTML5</h4></div>
+                <div class="text-center mx-auto"><img src="./images/css3.png" alt="CSS3"><br><h4>CSS3</h4></div>
+                <div class="text-center mx-auto"><img src="./images/js.png" alt="Javascript"><br><h4>Javascript</h4></div>
+                <div class="text-center mx-auto"><img src="./images/bootstrap.png" alt="Bootstrap"><br><h4>Bootstrap</h4></div>
+                <div class="text-center mx-auto"><img src="./images/react.png" alt="React"><br><h4>React</h4></div>
+                <div class="text-center mx-auto"><img src="./images/sass.png" alt="React"><br><h4>Sass</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="text-center">
+        <br><br><h1 class="text-light">Projects</h1><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 col-sm-12">
+                    <img class="w-75 h-75" src="./images/onlinevotingsystem.jpeg" alt="online voting system">
+                </div>
+                <div class="col-md-6 col-12 col-sm-12">
+                    <h3>Online Voting System</h3><br>
+                    <p>Online Voting System</p>
+                    <p>HTML/ CSS/ Javascript/ PHP</p>
+                </div>
+            </div>
+            <hr class="projectLine" style="width: 100%;"><br><br>
+            <div class="row">
+                <div class="col-md-6 col-12 col-sm-12">
+                    <h3>Facebook Design Project</h3><br>
+                    <p>Facebook design project just login, sign up, and post</p>
+                    <p>HTML/ CSS/ Javascript/ PHP</p>
+                </div>
+                <div class="col-md-6 col-12 col-sm-12">
+                    <img class="w-75 h-75" src="./images/facebook.jpeg" alt="facebook">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact text-center" id="contact">
+        <br><h1>Contact</h1><br>
+        <hr class="contactLine"><br>  
+        <div id="contactForm" class="mx-md-auto text-center">
+            <form action="PHP/contactHandler.php" method="post">
+                <div class="form-group">
+                    <label for="uname">Username:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="Email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" class="form-control" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-info">Message Me</button>
+            </form>
+        </div>
+    </section>
+    <br><br>
+    <address class="text-center w-100 p-4 bg-dark text-white">
+        &copy;Yousaf Masror 2020
+    </address>
+
+    <!-- javascript links -->
+    <script src="./js/index.js"></script>
+    <!-- bootstrap js links  -->
+    <script src="./bootstrap/jquery.min.js"></script>
+    <script src="./bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

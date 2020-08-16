@@ -1,0 +1,133 @@
+
+header {
+  background-color: black;
+}
+#header {
+  background-image: url(../images/ysf.png);
+  background-repeat: no-repeat;
+  background-size: 400px 550px;
+  background-position: bottom;
+  height: 600px;
+  color: white;
+  width: 80%;
+  position: relative;
+}
+#header h1 span {
+  font-size: 50px;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: tomato;
+  -webkit-text-fill-color: transparent;
+}
+#header h1 {
+  font-size: 50px;
+  padding-top: 100px;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 568px) {
+  #header h1 {
+    padding-top: 50px;
+  }
+}
+#animation-text {
+  font-size: 25px;
+}
+#header .headerSocial {
+  position: absolute;
+  list-style-type: none;
+  right: 60px;
+  top: 140px;
+}
+@media only screen and (max-width:568px) {
+  #header .headerSocial {
+    right: -10px;
+  }
+}
+/*  */
+#header .headerSocial li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#header .headerSocial li {
+  margin-bottom: 45px;
+}
+@media only screen and (max-width: 568px) {
+  #header .headerSocial li {
+    margin-bottom: 30px;
+  } 
+}
+.aboutme {
+  height: 580px;
+  background-image: linear-gradient(to right, rgb(228, 220, 220) 80%, rgb(253, 250, 250) 20%);
+}
+.aboutme h1{
+  text-align: center;
+}
+hr.headerLine, .projectLine{
+  border: 0;
+  height: 1px;
+  width: 30%;
+  text-align: left;
+  margin-left: 20px;
+  background-image: -webkit-linear-gradient( left, #000000,#f0f0f0, #f0f0f0,#000000);
+  background-image: -moz-linear-gradient( left, #000000,#f0f0f0, #f0f0f0,#000000);
+  background-image: -ms-linear-gradient( left, #000000,#f0f0f0, #f0f0f0,#000000);
+  background-image: -o-linear-gradient( left, #000000,#f0f0f0, #f0f0f0,#000000);
+  background-image: linear-gradient( left, #000000,#f0f0f0, #f0f0f0,#000000);
+}
+hr.aboutmeLine, hr.skillsLine, hr.contactLine {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient( left, #f0f0f0,#3e422d, #5e5050,#f0f0f0);
+  background-image: -moz-linear-gradient( left, #f0f0f0,#3e422d, #5e5050,#f0f0f0);
+  background-image: -ms-linear-gradient( left, #f0f0f0,#3e422d, #5e5050,#f0f0f0);
+  background-image: -o-linear-gradient( left, #f0f0f0,#3e422d, #5e5050,#f0f0f0);
+  background-image: linear-gradient( left, #f0f0f0,#3e422d, #5e5050,#f0f0f0);
+}
+.aboutme h3 {
+  color: rgb(228, 93, 15);
+}
+.aboutme p {
+  text-align: justify;
+  font-size: large;
+}
+.skills {
+  background-image: linear-gradient(to left, rgb(228, 220, 220) 30%,rgb(228, 220, 220) 40%,
+    rgb(253, 250, 250) 30%);
+  width: 100%;
+}
+.skills .skillsImages {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills .skillsImages div {
+  margin: 10px;
+  width: 30%;
+}
+.skills .skillsImages div img {
+  width: 85%;
+  height: 200px;
+}
+
+#projects {
+  background-image: linear-gradient(to right, rgb(61, 57, 57), rgb(54, 59, 54), rgb(26, 22, 22));
+}
+#projects div {
+  color: white;
+}
+@media only screen and (max-width:768px) {
+  .skills .skillsImages div {
+    width: 45%;
+  }
+}
+@media only screen and (min-width:768px) {  
+  #contactForm {
+    width: 50%;
+  }
+}
+@media only screen and (max-width:768px) {
+  #contactForm {
+    width: 95%;
+    margin: auto;
+  }
+}

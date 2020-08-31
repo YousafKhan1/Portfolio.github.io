@@ -12,7 +12,7 @@
             echo "Thanks For Submission";
         }
         else {
-            echo "Thanks for submission";
+            echo "Failed to submit";
         }
     }
 ?>

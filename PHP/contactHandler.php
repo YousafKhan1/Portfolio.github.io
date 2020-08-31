@@ -10,6 +10,7 @@
 
         if(mail($to, $subject, $message, $header)) {
             echo "Thanks For Submission";
+            header("location:../index.html");
         }
         else {
             echo "Failed to submit";

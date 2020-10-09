@@ -14,6 +14,7 @@
         }
         else {
             echo "Failed to submit";
+            header("location:../index.html");
         }
     //}
 ?>

@@ -9,7 +9,7 @@
         $header = "From: " .$email;
 
         if(mail($to, $subject, $message, $header)) {
-            echo "Thanks For Submission";
+            echo "Thanks For Submission to email";
             header("location:../index.html");
         }
         else {

@@ -4,17 +4,22 @@
         $email = $_POST['email'];
         $message = $_POST['message'];
 
-        $to = "muhammadyousaft1@gmail.com";
-        $subject = "HI";
-        $header = "From: " .$email;
+        $fp = fopen("file.txt", "w");
+        fwrite($fp, $email);
+fclose($fp);
+header("location:../index.html");
 
-        if(mail($to, $subject, $message, $header)) {
-            echo "Thanks For Submission to email";
-            header("location:../index.html");
-        }
-        else {
-            echo "Failed to submit";
-            header("location:../index.html");
-        }
+//         $to = "muhammadyousaft1@gmail.com";
+//         $subject = "HI";
+//         $header = "From: " .$email;
+
+//         if(mail($to, $subject, $message, $header)) {
+//             echo "Thanks For Submission to email";
+//             header("location:../index.html");
+//         }
+//         else {
+//             echo "Failed to submit";
+//             header("location:../index.html");
+//         }
     //}
 ?>

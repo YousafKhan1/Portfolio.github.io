@@ -1,4 +1,5 @@
 <?php
+echo "<script>alert('hi');</script>";
     //if($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST['uname'];
         $email = $_POST['email'];

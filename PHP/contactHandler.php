@@ -7,8 +7,7 @@
         $fp = fopen("file.txt", "w");
         fwrite($fp, $email);
 fclose($fp);
-header("location:../index.html");
-
+echo "<h1>Yes done</h1>";
 //         $to = "muhammadyousaft1@gmail.com";
 //         $subject = "HI";
 //         $header = "From: " .$email;
